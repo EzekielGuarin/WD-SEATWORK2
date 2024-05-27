@@ -1,0 +1,254 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+body
+{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profileText
+{
+    word-wrap: normal;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 14px;
+    
+    
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profileText h2 span
+{
+    font-size: 0.6em;
+    font-weight: normal;
+    
+}
+.aboutText
+{
+    color: #000;
+    line-height: 2;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 17px;
+    color: #03a9f4;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: normal;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.title2
+{
+    margin-left: 20px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.desc_profile 
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ 
+
+}
+.desc_personal
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+p 
+{
+    color: #333;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    color: #333;
+}
+.about .box .personal_data
+{
+    min-width: 300px;
+}
+.about .box .personal_data h4
+{
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 14px
+}
+.about li
+{
+    list-style: none;
+}
+.bar
+{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-left: 19px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12) 0 1px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezeir(.25,.8,.25,1);
+}
+.bar:hover
+{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span
+{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100% );
+}
+.multitasking
+{
+    width: 90%;
+    animation: multitasking 3s;
+}
+.computer_literate
+{
+    width: 80%;
+    animation: computer_literate 3s;
+}
+.video_editing
+{
+    width: 75%;
+    animation: video_editing 3s;
+}
+@keyframes multitasking
+{
+    0%{
+        width: 0%;
+    }    
+    90%{
+        width: 90%;
+    }
+}
+@keyframes computer_literate
+{
+    0%{
+        width: 0%;
+    }    
+    80%{
+        width: 80%;
+    }
+}
+@keyframes video_editing
+{
+    0%{
+        width: 0%;
+    }    
+    75%{
+        width: 75%;
+    }
+}
